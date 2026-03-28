@@ -9,6 +9,8 @@ body {
     margin: 0;
     /* Garante que o body ocupe pelo menos toda a altura da tela */
     min-height: 100%;
+    /* Alinhar o texto */
+    text-align: center;
 }
 
 main {
@@ -22,6 +24,9 @@ main {
     justify-content: center;
     /* Garante altura mínima de 100% da tela */
     min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 h1 {
@@ -140,13 +145,13 @@ ol {
 
 /* Mobile responsivity */
 @media (max-width: 900px) {
-    main {
+    * {
         /* remove width limit */
         max-width: 100%;
         max-height: 100%;
         min-height: auto;
         min-width: auto;
-        margin: auto;
+        margin: 0;
         padding: 0.1rem 0.1rem 0.1rem 0.1rem;
     }
     h1 {

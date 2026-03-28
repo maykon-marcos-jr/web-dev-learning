@@ -1,5 +1,9 @@
+alert("Bem Vindo, Bicho Pinga")
+
 // Função para alternar entre dark e light mode
 function toggleTheme() {
+    // writes on the console
+    console.log("Changing theme")
     const body = document.body;
     const btn = document.getElementById('theme-toggle');
     body.classList.toggle('light-mode');
