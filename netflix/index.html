@@ -10,26 +10,57 @@
     <!-- define viewport and site structure -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix - Maykon Jr</title>
+    <!-- Linking the styling file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- required tag for the website's main content -->
     <main>
-        <h1>Maykon Jr PirataFlix</h1>
+        <h1 id="Main">Família Bicho-Pinga</h1>
         <!-- AI usually sugest using a lot of <div></div> tags, but that makes the site content less accessible (the site becomes less responsible to accessibility extensions) and less indexable for search mecanisms, that can't navegate through div tags well -->
          <!-- A main division to join the profiles -->
-        <div class = "profiles">
-            <div class = "profile 1">
-                <!-- a image for the profile -->
-                <!-- The image path or link must be a string -->
-                <!-- The alt text will be inserted if the image source isn't available -->
-                <img src="/assets/profile-1.jpg" alt="Imagem 1 inválida">
-                <p>Maykon Jr</p>
-            </div>
-            <div class = "profile 2">
-                <img src="/assets/profile-2.jpg" alt="Imagem 2 Inválida">
-                <p>Perfil 2</p>
-            </div>
-        </div>
+        <section aria-label = "Perfis">
+            <!-- Classes are important so that css files can alter all tags with this class at once -->
+             <!-- IDs are also possible, but they can't be shared -->
+            <nav class = "profiles">
+                <a href="#" class="profile">
+                    <!-- it's better to separate what is related to the figures on a tag -->
+                    <figure>
+                            <!-- a image for the profile -->
+                            <!-- The image path or link must be a string -->
+                            <!-- The alt text will be inserted if the image source isn't available; and it is also read the sreen readers -->
+                            <img
+                            src="/assets/profile-1.jpg" alt="Imagem do Pai">
+                            <!-- using <figcaption> instead of a paragraph <p> to make the text closer to the image and better organized-->
+                            <figcaption>Pai</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class = "profile">
+                    <figure>
+                        <img src="/assets/profile-2.jpg" alt="Imagem do Maykon Jr">
+                        <figcaption>Maykon Jr</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class = "profile">
+                    <figure>
+                        <img src="/assets/profile-3.jpg" alt="Imagem do Matheus">
+                        <figcaption>Matheus</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class = "profile">
+                    <figure>
+                        <img src="/assets/profile-4.jpg" alt="Imagem do Pedro">
+                        <figcaption>Pedro</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class = "profile">
+                    <figure>
+                        <img src="/assets/profile-5.jpg" alt="Imagem do João">
+                        <figcaption>João</figcaption>
+                    </figure>
+                </a>
+            </nav>
+        </section>
     </main>
 </body>
 </html>
